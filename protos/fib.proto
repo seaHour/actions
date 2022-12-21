@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+// Interface exported by the server.
+service Fib {
+  rpc Run(FibRequest) returns (FibReply) {}
+}
+
+message FibRequest {
+  int32 index = 1;
+}
+
+message FibReply {
+  uint64 value = 1;
+}

@@ -7,8 +7,13 @@ all: build
 
 build: clean
 	pipenv sync --dev
+	pipenv run python -m grpc_tools.protoc -I../../protos \
+		--python_out=./src/series/ \
+		--pyi_out=./src/series/ \
+		--grpc_python_out=./src/series/ \
+		../../protos/fib.proto
 	pipenv run pipenv-setup sync
-	pipenv run python setup.py sdist bdist_wheel --build-number $(BUILD_NUMBER)
+	pipenv run python setup.py sdist bdist_wheel --build-number ${BUILD_NUMBER}
 
 clean:
 	@rm -rf dist build src/*.egg-info
