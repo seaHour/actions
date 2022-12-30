@@ -21,8 +21,9 @@ linters:
     - unconvert
     - gocyclo
     - goconst
-#     - goimports
-#     - gocritic
+
+    - goimports
+    - gocritic
 #     - govet
 #     - revive
 linters-settings:
