@@ -1,8 +1,3 @@
-export BUILD_MAJOR = 1
-export BUILD_MINOR = 0
-export BUILD_PATCH = 0
-export BUILD_NUMBER = 1
-
 all: build
 
 build: clean
