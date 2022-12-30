@@ -24,7 +24,7 @@ linters:
 
     - goimports
     - gocritic
-#     - govet
+    - govet
 #     - revive
 linters-settings:
   errcheck:
