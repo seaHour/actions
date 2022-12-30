@@ -15,12 +15,12 @@ issues:
         - dupl
         - gosec
         - goconst
-# linters:
-#   enable:
-#     - gosec
-#     - unconvert
-#     - gocyclo
-#     - goconst
+linters:
+  enable:
+    - gosec
+    - unconvert
+    - gocyclo
+    - goconst
 #     - goimports
 #     - gocritic
 #     - govet
