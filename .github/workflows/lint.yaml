@@ -18,14 +18,14 @@ jobs:
         with:
           go-version: 1.19
 
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@v3
+            #- name: golangci-lint
+            #uses: golangci/golangci-lint-action@v3
 
       - name: Run Linting on Code Base
         uses: github/super-linter/slim@v4.9.7
         env:
           DEFAULT_BRANCH: main
-          # VALIDATE_GO: true
+          VALIDATE_GO: true
           VALIDATE_JAVASCRIPT_ES: true
           VALIDATE_TYPESCRIPT_ES: true
           # To disable unused feature from Super linter
