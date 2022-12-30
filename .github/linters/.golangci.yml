@@ -20,12 +20,13 @@ linters:
     - gosec
     - unconvert
     - gocyclo
-    - goconst
+#    - goconst
+#    - goimports
+#    - gocritic
 
-    - goimports
-    - gocritic
-#    - govet
-    - revive
+#   - govet (disable)
+
+#    - revive
 linters-settings:
   errcheck:
     # report about assignment of errors to blank identifier
